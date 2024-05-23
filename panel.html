@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="es" style="height: 100%;" class="translated-ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">   
+<meta http-equiv="x-ua-compatible" content="ie=edge">        
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+<link rel="shortcut icon" type="image/x-icon" href="/Imagenes/IMG-HOME/LogoORX.ico">
+<title>Panel | ORX</title>
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<link rel="stylesheet" href="/CSS/stylePanel.css">
+<link rel="stylesheet" id="stylesh_css-css" href="/Frameworks/Framework_Panel/style(1).css" type="text/css" media="all">
+<link rel="stylesheet" id="bootstrap_css-css" href="/Frameworks/Framework_Panel/bootstrap.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="responsive_css-css" href="/CSS/stylePanelResponsive.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-frontend-css" href="/Frameworks/Framework_Panel/frontend-lite.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-post-99-css" href="/Frameworks/Framework_Panel/post-99.css" type="text/css" media="all">
+<link rel="stylesheet" id="google-fonts-1-css" href="/Frameworks/Framework_Panel/css" type="text/css" media="all">
+<script type="text/javascript" src="/Frameworks/jquery.min.js.descarga" id="jquery-core-js"></script>
+<link rel="stylesheet" href="/Frameworks/Framework_Panel/widget-woocommerce.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   
+
+<script>
+    /*
+    function devtoolIsOpening() {
+        console.clear();
+        let before = new Date().getTime();
+        debugger;
+        let after = new Date().getTime();
+        if (after - before > 200) {
+            document.write(" Dont open Developer Tools. ");
+            window.location.replace("https://www.google.com");
+        }
+        setTimeout(devtoolIsOpening, 100);
+    }
+    devtoolIsOpening();*/
+</script>
+<style>
+    .containerv{
+        background: rgb(17, 54, 128);
+        border: 2px solid rgb(0, 153, 255);
+    }
+</style>
+</head>
+    <body class="e--ua-blink e--ua-chrome e--ua-webkit" data-elementor-device-mode="desktop" style="position: relative; min-height: 100%; top: 40px;">
+        <script>
+            /*
+            function devtoolIsOpening() {
+                console.clear();
+                let before = new Date().getTime();
+                debugger;
+                let after = new Date().getTime();
+                if (after - before > 200) {
+                    document.write(" Dont open Developer Tools. ");
+                    window.location.replace("https://www.google.com");
+                }
+                setTimeout(devtoolIsOpening, 100);
+            }
+            devtoolIsOpening();*/
+            </script>
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+       
+       const username = sessionStorage.getItem('username');
+
+     
+       const usernamePlaceholder = document.getElementById('usernamePlaceholder');
+
+      
+       usernamePlaceholder.textContent = username;
+            
+       Swal.fire({
+    icon: "success",
+    title: `✔️<span style='color: white;'>Bienvenido ${username}</span>✔️`,
+    text: "___________________________________",
+    background: "#141a25",
+   showClass: {
+    popup: `
+      animate__animated
+      animate__fadeInUp
+      animate__faster
+    `
+  },
+  hideClass: {
+    popup: `
+      animate__animated
+      animate__fadeOutDown
+      animate__faster
+    `
+  }
+});
+   });
+
+  </script>
+        
+        
+        <div class="skiptranslate"><iframe id=":1.container" class="VIpgJd-ZVi9od-ORHb-OEVmcd skiptranslate" frameborder="0" src="" style="visibility:visible"></iframe>
+
+    </div>
+       
+        <header>
+            <div id="header-top-fixed" class=""></div>
+            <div id="sticky-header" class="menu-area">
+                <div class="container custom-container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="mobile-nav-toggler"><i class="bi bi-list"></i></div>
+                            <div class="menu-wrap">
+                                <nav class="menu-nav show">
+                                    <div class="logo">
+                                    <h2 class="title wow fadeInUp" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;"><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ORX</font></font></a></h2>
+                                    </div>
+                                    <div class="navbar-wrap main-menu d-none d-lg-flex">
+                                        <ul class="navigation">
+                                        <li><a href="#"><i class="bi bi-house-door-fill"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Inicio</font></font></a></li>
+                                        <li><a href="#"><i class="bi bi-film"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tutorial</font></font></a></li>
+                                        <li><a  href="#"id="exit"><i class="bi bi-box-arrow-left"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Salir</font></font></a></li>                                        
+                                        </ul>
+                                    </div>
+                                    <div class="header-action">
+                                        <ul>
+                                            <li class="header-sine">
+                                                <a href="#"><i id="user" class="bi bi-person-circle" style="font-size: 20px;"></i></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mi cuenta</font></font></a>
+                                            </li>
+                                        </ul>
+                                    </div> 
+                                </nav>
+                            </div>
+                            
+                        
+                            <div class="mobile-menu">
+                                <nav class="menu-box">
+                                    <div class="close-btn"><i class="bi bi-list"></i></div>
+                                    <div class="nav-logo"><a href="#"><img src="/Imagenes/IMG-HOME/LogoORX (2).png" alt=""></a>
+                                    </div>
+                                    <div class="menu-outer">
+                                    </div>
+                                    <div class="social-links">
+                                        <ul class="clearfix">
+                                            <li><a href="#"><span class="bi bi-discord"></span></a></li>
+                                            <li><a href="#"><span class="bi bi-whatsapp"></span></a></li>
+                                            <li><a href="#"><span class="bi bi-youtube"></span></a></li>
+                                         
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="menu-backdrop"></div>
+                        
+                        </div>
+                    </div>
+                </div>
+                <div class="header-icon">
+                    <a href="#" class="menu-tigger"><img class="imagenOrx" src="/Imagenes/IMG-HOME/LogoORX (2).png" alt=""></a>
+                </div>
+            </div>
+           
+
+    
+        <div class="extra-info">
+                <div class="close-icon menu-close">
+                            <button><i class="bi bi-x-octagon-fill"></i></button>
+                </div>
+                    <div class="logo-side mb-30">
+                    </div>
+                <div class="side-info mb-30">                
+                        <div class="contact-list mb-30">
+                                <h4><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">DIRECCIÓN</font></font></h4>
+                                <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bolivia</font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">La paz</font></font></p>
+                        </div>
+
+                        <div class="contact-list mb-30">
+                                <h4><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Desarrollador</font></font></h4>
+                                <a href="#" class="menu-tigger"><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;" id="bienvenida"><span style="color: red;">Noe</span></font></font></p></a>
+                        </div>
+                </div>
+                        
+                <div class="social-icon-right mt-30">
+                            <a href="#"><i class="bi bi-discord"></i></i>
+                            </a><a href="#"><i class="bi bi-youtube"></i></a>
+                            <a href="#"><i class="bi bi-whatsapp"></i></a>
+                </div>
+
+        </div>
+        <div class="offcanvas-overly"></div>
+
+        <div id="preloader" style="display: none;">
+            <div id="loading-center">
+                <div class="loader">
+                    <div class="loader-outter"></div>
+                    <div class="loader-inner"></div>
+                </div>
+            </div>
+        </div>
+
+        <button class="scroll-top scroll-to-target" data-target="html">
+            <a href="#"><i class="bi bi-arrow-up-circle-fill" style="font-size: 20px;"></i></a>
+          
+        </button>
+        <main class="main-content-elementor">
+            		<div data-elementor-type="wp-page" data-elementor-id="99" class="elementor elementor-99">
+							<div class="elementor-element elementor-element-3380e94 e-con-boxed e-con" data-id="3380e94" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-b846039 e-my-account-tabs-vertical elementor-widget elementor-widget-woocommerce-my-account" data-id="b846039" data-element_type="widget" data-widget_type="woocommerce-my-account.default">
+				<div class="elementor-widget-container">
+
+
+<div class="e-my-account-tab e-my-account-tab__dashboard "><span class="elementor-hidden"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[woocommerce_mi_cuenta]</font></font></span>
+			
+        <div class="woocommerce">
+<nav class="woocommerce-MyAccount-navigation">
+	<ul>
+					<li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--dashboard is-active">
+            
+				<a href="#" onclick="mostrarContenido('dashboard')"><i class="bi bi-house-door-fill" style="font-size: 20px;"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Panel</font></font></a>
+			</li>
+					<li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--orders">
+				<a href="#" onclick="mostrarContenido('restablecerHWID')"><i class="bi bi-arrow-counterclockwise" style="font-size: 20px;"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Restablecer HWID</font></font></a>
+			</li>
+			<li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--edit-address">
+				<a href="#"  onclick="mostrarContenido('descargar')"><i class="bi bi-download" style="font-size: 20px;"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Descargar</font></font></a>
+			</li>
+            <li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--edit-address">
+				<a href="#"  onclick="mostrarContenido('Clientes')"><i class="bi bi-people-fill" style="font-size: 20px;"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Clientes</font></font></a>
+			</li>
+
+					<li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--customer-logout">
+				<a href="#" id="exitt"><i class="bi bi-box-arrow-left" style="font-size: 20px;"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Salir</font></font></a>
+			</li>
+			</ul>
+</nav>
+
+
+<div class="woocommerce-MyAccount-content">
+	<div class="woocommerce-MyAccount-content-wrapper">
+        <div class="woocommerce-notices-wrapper">
+
+    </div>
+    <div id="contenido">
+    <div id="saludo">
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+            Hola, </font></font><strong><span id="usernamePlaceholder"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"></font></font></span></strong><font style="vertical-align: inherit;">  le saluda atentamente el desarrollador<span style="color:rgb(255, 0, 0)">  Noe.</span> <font style="vertical-align: inherit;"> </font></font></p>
+    </div>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+	Desde el panel de su cuenta, puede ver </font></font><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;" id="bienvenida">las actualizaciones recientes</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> , podra </font></font><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;" id="bienvenida">restablecer su HWID</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> , </font></font><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;" id="bienvenida"> ver los tutoriales del manejo del software </font></font></a><font style="vertical-align: inherit;">  y  <font style="vertical-align: inherit;"><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;" id="bienvenida"> podra descargar el software.</font></font></a></font></font></p>
+     </div>
+</div>
+</div>
+</div>		
+</div>
+				  </div>
+				  </div>
+					</div>
+				  </div>
+					</div>
+		      </main>
+    <div class="eael-reading-progress-fill" style="height: 5px; background-color: rgb(31, 209, 142); transition: width 50ms ease 0s; width: 0%;"></div>
+  </div>
+</div>			
+<link rel="stylesheet" id="eael-reading-progress-css" href="/Frameworks/Framework_Panel/reading-progress.min.css" type="text/css" media="all">
+<script type="text/javascript" src="./Frameworks/Framework_Panel/main.js.descarga" id="main_js-js"></script>
+<script src="/Frameworks/Framework_Panel/dwf.js.descarga" data-no-optimize="1" data-no-minify="1" data-gt-orig-url="/minha-conta/" data-gt-orig-domain="xereca.store" data-gt-widget-id="53064270" defer=""></script><script type="text/javascript" src="" id="eael-reading-progress-js"></script>
+
+
+
+        <footer>
+            <div class="footer-top-wrap">
+                <div class="container">
+                    <div class="footer-menu-wrap">
+                        <div class="row align-items-center">
+                            <div class="col-lg-3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-quick-link-wrap">
+                        <div class="row align-items-center">
+                            <div class="col-lg-7 col-md-8">
+                                <div class="quick-link-list">
+                                    <ul>
+                                        <li><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><i  class="bi bi-discord" style="font-size: 20px;"></i></font></font></a></li>
+                                        <li><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><i class="bi bi-youtube" style="font-size: 20px;"></i></font></font></a></li>
+                                        <li><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><i class="bi bi-facebook" style="font-size: 20px;"></i></font></font></a></li>
+                                        <li><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><i class="bi bi-gitlab" style="font-size: 20px;"></i></font></font></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-4">
+                                <div class="footer-social">
+                                    <ul>
+                                        <div class="copyright-text">
+                                            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Copyright © 2023 Todos los derechos reservados para </font></font><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">|Developer : Noe</font></font></span></p>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</footer>
+</header>
+<span id="elementor-device-mode" class="elementor-screen-only"></span>
+<svg style="display: none;" class="e-font-icon-svg-symbols"></svg>
+
+</svg>
+</div>
+</div>
+
+  </iframe>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+       
+        const username = sessionStorage.getItem('username');
+
+      
+        const usernamePlaceholder = document.getElementById('usernamePlaceholder');
+
+       
+        usernamePlaceholder.textContent = username;
+
+       
+        sessionStorage.removeItem('username');
+    });
+
+    document.querySelectorAll('.woocommerce-MyAccount-navigation-link').forEach(function (enlace) {
+    enlace.addEventListener('click', function () {
+     
+        document.querySelectorAll('.woocommerce-MyAccount-navigation-link a').forEach(function (elemento) {
+            elemento.style.background = '#54595f';
+        });
+
+        this.querySelector('a').style.background = 'linear-gradient(117deg, rgba(84,89,95, 1) 0%, rgba(88, 25, 31, 1) 22%, rgba(152, 16, 20, 1) 36%, rgba(255, 3, 3, 1) 83%)';
+
+    });
+});
+
+
+</script>
+<script>
+
+function mostrarContenido(opcion) {
+    var contenido = document.getElementById('contenido');
+    var saludo = '<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hola, </font></font><strong><span id="usernamePlaceholder"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"></font></font></span></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> </font></font></p>';
+
+  
+    document.querySelectorAll('.woocommerce-MyAccount-navigation-link a').forEach(function (enlace) {
+
+
+    });
+
+    switch (opcion) {
+        case 'dashboard':
+        contenido.innerHTML = saludo + '<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Desde el panel de su cuenta, puede ver </font></font><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;" id="bienvenida">las actualizaciones recientes</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> , podrá </font></font><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;" id="bienvenida">restablecer su HWID</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> , </font></font><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;" id="bienvenida">ver los tutoriales del manejo del software </font></font></a><font style="vertical-align: inherit;"> y <a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;" id="bienvenida">podrá descargar el software.</font></font></a></font></font></p>';
+            
+            const username = 'username'; 
+            document.getElementById('usernamePlaceholder').textContent = username;
+           
+            document.querySelector('.woocommerce-MyAccount-navigation-link--dashboard a').style.background = 'linear-gradient(117deg, rgba(31, 32, 41, 1) 0%, rgba(88, 25, 31, 1) 22%, rgba(152, 16, 20, 1) 36%, rgba(255, 3, 3, 1) 83%)';
+            break;
+        case 'restablecerHWID':
+            contenido.innerHTML = '<p>Contenido para Restablecer HWID...</p>';
+           
+            document.querySelector('.woocommerce-MyAccount-navigation-link--orders a').style.background = 'linear-gradient(117deg, rgba(84,89,95, 1) 0%, rgba(88, 25, 31, 1) 22%, rgba(152, 16, 20, 1) 36%, rgba(255, 3, 3, 1) 83%)';
+            break;
+        case 'descargar':
+            contenido.innerHTML = '<p>Contenido para Descargar...</p>';
+           
+            document.querySelector('.woocommerce-MyAccount-navigation-link--edit-address a').style.background = 'linear-gradient(117deg, rgb(84, 89, 95) 0%, rgb(88, 25, 31) 22%, rgb(152, 16, 20) 36%, rgb(255, 3, 3) 83%);';
+            break;
+
+        case 'Clientes':
+            contenido.innerHTML = ' <div class="containerv"><div class="row align-items-start"><div class="col">Clientes</div><div class="col">Compra</div><div class="col">Fecha</div></div> ';
+           
+            document.querySelector('.woocommerce-MyAccount-navigation-link--edit-address a').style.background = 'linear-gradient(117deg, rgb(84, 89, 95) 0%, rgb(88, 25, 31) 22%, rgb(152, 16, 20) 36%, rgb(255, 3, 3) 83%);';
+            break;            
+        default:
+            contenido.innerHTML = '<p>Contenido predeterminado...</p>';
+    }
+}
+
+
+
+</script>
+<script>
+  $("#exit,#exitt").click(function (event) {
+    event.preventDefault(); 
+
+    Swal.fire({
+    title: "<span style='color: red;'>Estas seguro?</span>",
+      text: "¡No podrás revertir esto!",
+      icon: "warning",
+      background: "#141a25",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Si,estoy seguro"
+    }).then((result) => {
+      if (result.isConfirmed) {
+        
+        window.location.href = "index.html";
+      } else {
+   
+      }
+    });
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>

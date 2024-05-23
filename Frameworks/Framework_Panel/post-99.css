@@ -1,0 +1,211 @@
+.elementor-99 .elementor-element.elementor-element-3380e94
+{--background-transition:0.3s;
+    --padding-top:100px;
+    --padding-right:0px;
+    --padding-bottom:100px;
+    --padding-left:0px;}
+    .elementor-99 .elementor-element.elementor-element-b846039{
+        --tab-content-spacing:3px;
+        --tabs-alignment:start;
+        --tabs-normal-color:#7A7A7A;
+        --tabs-hover-color:#FFFFFF;
+        --tabs-active-color:#FFFFFF;
+        --tabs-border-type:solid;
+        --tabs-border-color:#6B6B6B;
+        --tabs-border-radius:0px 0px 5px 5px;
+        --tabs-padding:15px 15px 15px 15px;
+        --sections-background-color:#080808;
+        --sections-border-type:solid;
+        --sections-border-top-width:0px;
+        --sections-border-right-width:0px;
+        --sections-border-bottom-width:0px;
+        --sections-border-left-width:0px;
+        --sections-border-radius:0px 0px 0px 0px;
+        --forms-fields-border-radius:5px 5px 5px 5px;}
+        .elementor-99 .elementor-element.elementor-element-b846039 .e-my-account-tab .woocommerce .woocommerce-MyAccount-navigation ul li a{
+            font-family:"Oswald", Sans-serif;
+            font-weight:500;
+            text-transform:uppercase;
+            letter-spacing:1.1px;
+            border-width:0px 0px 0px 5px;}
+            .elementor-99 .elementor-element.elementor-element-b846039 .e-my-account-tab .woocommerce .woocommerce-MyAccount-navigation ul li:not(.is-active) a{
+                background-color:#54595F;
+            color: white;}
+                .elementor-99 .elementor-element.elementor-element-b846039 .e-my-account-tab .woocommerce .woocommerce-MyAccount-navigation ul li.is-active a{
+                    background-color:#54595F;
+                    background-image:linear-gradient(117deg, var( --e-global-color-secondary ) 0%, var( --e-global-color-primary ) 110%);
+                }.elementor-99 .elementor-element.elementor-element-b846039 .woocommerce-form-row label, .elementor-99 .elementor-element.elementor-element-b846039 .woocommerce-address-fields label{font-family:"Poppins", Sans-serif;font-size:16px;}.elementor-99 .elementor-element.elementor-element-b846039 .input-text:focus, .elementor-99 .elementor-element.elementor-element-b846039 select:focus, .elementor-99 .elementor-element.elementor-element-b846039 .select2-container--default .select2-selection--single:focus, .elementor-99 .elementor-element.elementor-element-b846039 .e-my-account-tab__payment-methods input[type=text]:focus{box-shadow:0px 2px 10px 1px rgba(241.5, 0, 0, 0.5);}.elementor-99 .elementor-element.elementor-element-b846039 .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .form-row .input-text, .elementor-99 .elementor-element.elementor-element-b846039 .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .form-row select, .elementor-99 .elementor-element.elementor-element-b846039 .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .select2-container--default, .elementor-99 .elementor-element.elementor-element-b846039 .e-my-account-tab__payment-methods input[type=text]{border-style:solid;border-color:#DEDEDE;}.elementor-99 .elementor-element.elementor-element-b846039 .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce-EditAccountForm .button, .elementor-99 .elementor-element.elementor-element-b846039 .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce-address-fields .button, .elementor-99 .elementor-element.elementor-element-b846039 .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .login .button, .elementor-99 .elementor-element.elementor-element-b846039 .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .register .button, .elementor-99 .elementor-element.elementor-element-b846039 .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .woocommerce-ResetPassword .button, .elementor-99 .elementor-element.elementor-element-b846039 #add_payment_method #payment #place_order{background-color:var( --e-global-color-primary );}.elementor-99 .elementor-element.elementor-element-b846039 .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce-EditAccountForm .button, .elementor-99 .elementor-element.elementor-element-b846039 .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce-address-fields .button, .elementor-99 .elementor-element.elementor-element-b846039 button.button, .elementor-99 .elementor-element.elementor-element-b846039 #add_payment_method #payment #place_order{box-shadow:0px 0px 10px 0px rgba(0,0,0,0.5);}@media(min-width:768px){.elementor-99 .elementor-element.elementor-element-3380e94{--content-width:1400px;}}/* Start custom CSS for woocommerce-my-account, class: .elementor-element-b846039 */.woocommerce-MyAccount-content {
+    min-height: 500px !important;
+}
+
+
+
+
+/* Estilo predeterminado */
+/* Estilo predeterminado */
+.woocommerce-MyAccount-navigation-link a {
+    color: #fff;
+    background: #54595f;
+}
+
+
+
+
+
+
+
+
+.woocommerce-MyAccount-content {
+    background: #1f2029 !important;
+    color: #fff !important;
+    padding: 50px !important;
+}
+
+.woocommerce-MyAccount-content-wrapper {
+    background: #1f2029 !important;
+    color: #fff !important;
+}
+legend{
+    color: #fff !important;
+}
+
+.woocommerce-MyAccount-content-wrapper p{
+    background: #1f2029 !important;
+    color: #fff !important;
+}
+
+.woocommerce-MyAccount-content-wrapper p strong{
+    background: #1f2029 !important;
+    color: #ff0303 !important;
+    text-transform: capitalize;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.woocommerce-MyAccount-content-wrapper p a{
+    background: #1f2029 !important;
+    color: #FED53B !important;
+    text-transform: lowercase;
+    font-weight: 300;
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+.woocommerce-MyAccount-content-wrapper p button{
+    background: #ff0303 !important;
+    color: #fff !important;
+}
+
+.u-column2.col-2.woocommerce-Address{
+    display: none !important;
+}
+.u-column1.col-1.woocommerce-Address adress{
+    background: #1f2029 !important;
+}
+
+.woocommerce-Address-title.title h3{
+    color: #fff !important;
+}
+
+.woocommerce-Address-title.title a{
+    font-weight: 600 !important;
+    text-decoration: underline !important;
+
+}
+
+
+.woocommerce-MyAccount-content-wrapper-no-data{
+    color: #fff !important;
+    background: #1f2029 !important;
+}
+.woocommerce-Message.woocommerce-Message--info.woocommerce-info{
+     color: #fff !important;
+         background: #08121e !important;
+         border-top: #fff solid 3px;
+}
+
+.woocommerce-info::before{
+    color: #ff0303 !important;
+}
+
+a.edit {
+    color: #1f2029 !important;
+}
+
+.woocommerce-Button.button{
+    background: #ff0303 !important;
+    color: #fff !important;
+}
+.woocommerce-Button.button:hover{
+    background: #155980 !important;
+    color: #fff !important;
+}
+
+.woocommerce h2{
+    color: #fff !important;
+    text-align: center !important;
+}
+
+/*
+.woocommerce-form.woocommerce-form-login.login{
+    margin: 0 auto;
+    width: 300px !important;
+    height: 400px !important;
+    border-radius: 5px !important;
+    border: 2px solid #ff0303!important;
+background: rgb(31,32,41) !important;
+background: linear-gradient(117deg, rgba(31,32,41,1) 0%, rgba(88,25,31,1) 37%, rgba(152,16,20,1) 67%, rgba(255,3,3,1) 98%) !important;
+}
+.woocommerce-form.woocommerce-form-login.login p label{
+    color: #fff !important;
+    font-weight: 500 !important;
+    font-size: 16px !important;
+    width: 150px !important;
+}
+.woocommerce-form.woocommerce-form-login.login p button{
+    background: #1f2029  !important;
+    width: 230px !important;
+}
+*/
+.woocommerce-MyAccount-content-wrapper form h3{
+    color: #fff !important;
+}
+.woocommerce-address-fields{
+    background: #1f2029 !important;
+}
+
+.woocommerce-form__label-for-checkbox span {
+    color: var(--checkboxes-color,#818a91) !important;
+}
+.u-column1.col-1.woocommerce-Address {
+    width: 100%;
+}
+
+span.nobr {
+    color: #fff !important;
+}
+
+.order-number,.order-date,.order-status {
+    color: #3b99fc !important;
+}
+mark.order-date {
+    color: #3b99fc !important;
+}
+.e-my-account-tab .woocommerce-order-details .woocommerce-table--order-details{
+        color: #fff !important;
+}
+.woocommerce-table--order-details thead .product-name{
+    color: #fff !important;
+}
+
+.woocommerce-table--order-details tr .woocommerce-table__product-table{
+      color: #fff !important;  
+}
+
+.woocommerce-table--order-details tfoot th{
+      color: #fff !important;  
+}
+
+span.woocommerce-Price-amount.amount{
+        color: #fff !important;   
+}/* End custom CSS */

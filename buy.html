@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Compras | ORX</title>
+    <link rel="stylesheet" href="CSS/stylebuy.css">
+    <link rel="shortcut icon" href="/Imagenes/IMG-HOME/IMG-INICIO/LogoORX.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+    body {
+        background: transparent;
+        margin: 0; 
+    }
+
+</style>
+</head>
+<body>
+    <script>
+        function devtoolIsOpening() {
+            console.clear();
+            let before = new Date().getTime();
+            debugger;
+            let after = new Date().getTime();
+            if (after - before > 200) {
+                document.write(" Dont open Developer Tools. ");
+                window.location.replace("https://www.google.com");
+            }
+            setTimeout(devtoolIsOpening, 100);
+        }
+        devtoolIsOpening();
+        </script>
+    <form action="">
+    <div class="container">
+        
+        <h3 id="title">Confirmar tu pago</h3>
+        <div class="first-row">
+            <div class="owner">
+                <h5>Propietario</h5>
+                <div class="input-field">
+                    <input id="user" type="text" autocomplete="off"oninput="allowOnlyLetters(this)" required>
+                </div>
+            </div>
+            <div class="cvv">
+                <h5>CVV</h5>
+                <div class="input-field">
+                    <input id="cvvv" type="password"maxlength="3" autocomplete="off" oninput="allowOnlyNumbers(this)" required>
+                </div>
+            </div>
+        </div>
+        <div class="second-row">
+            <div class="card-number">
+                <h5>Número de tarjeta</h5>
+                <div class="input-field">
+                    <input id="num" type="text" maxlength="19" autocomplete="off" oninput="formatTarjeta(this)" required placeholder="">
+                </div>
+            </div>
+        </div>
+        <div class="third-row">
+            <h5>Fecha de expiracion</h5>
+            <div class="selection">
+                <div class="date">
+                    <select name="months" id="months" required>
+                        <option value="Jan">Ene</option>
+                        <option value="Feb">Feb</option>
+                        <option value="Mar">Mar</option>
+                        <option value="Apr">Abr</option>
+                        <option value="May">May</option>
+                        <option value="Jun">Jun</option>
+                        <option value="Jul">Jul</option>
+                        <option value="Aug">Ago</option>
+                        <option value="Sep">Sep</option>
+                        <option value="Oct">Oct</option>
+                        <option value="Nov">Nov</option>
+                        <option value="Dec">Dic</option>
+                      </select>
+                      <select name="years" id="years">
+                        <option value="2020">2020</option>
+                        <option value="2019">2021</option>
+                        <option value="2018">2022</option>
+                        <option value="2017">2023</option>
+                        <option value="2016">2024</option>
+                        <option value="2015">2025</option>
+                      </select>
+                </div>
+
+           <div class="cards">
+        <div class="paypal" onclick="seleccionarTarjeta(this)">
+            <img src="/Imagenes/IMG-SHOP/IMG_BUY/vi.png" alt="PayPal">
+        </div>
+        <div class="master" onclick="seleccionarTarjeta(this)">
+            <img src="/Imagenes/IMG-SHOP/IMG_BUY/mc.png" alt="MasterCard">
+        </div>
+        <div class="debito" onclick="seleccionarTarjeta(this)">
+            <img src="/Imagenes/IMG-SHOP/IMG_BUY/pp.png" alt="Tarjeta de débito">
+        </div>
+            
+    </div>
+            </div>    
+        </div>
+        <a href="#" onclick="confirmarPago()" >Confirmar pago</a>
+        <div class="status">
+            <h3 id="titles">status</h3>
+        </div>
+        
+    </div>
+
+
+</form>
+    <script>
+        function seleccionarTarjeta(card) {
+          
+            var cards = document.querySelectorAll('.cards > div');
+            cards.forEach(c => c.classList.remove('active'));
+        
+            card.classList.add('active');
+        }
+   
+        function formatTarjeta(input) {
+           
+            let tarjetaNumber = input.value.replace(/\D/g, '');
+            tarjetaNumber = tarjetaNumber.replace(/(\d{4})(?=\d)/g, '$1 ');
+            input.value = tarjetaNumber;
+        }
+
+        function allowOnlyLetters(input) {
+            
+            input.value = input.value.replace(/[^A-Za-z]/g, '');
+        }
+     
+        function allowOnlyNumbers(input) {
+            
+            input.value = input.value.replace(/\D/g, '');
+        }
+
+
+
+        function confirmarPago() {
+
+
+            var numInput = document.getElementById('num').value.trim();
+    var cvvvInput = document.getElementById('cvvv').value.trim();
+    var userInput = document.getElementById('user').value.trim();
+
+
+    if (numInput === '' || cvvvInput === '' || userInput === '') {
+  
+        var statusElement = document.getElementById('titles');
+        statusElement.style.color = "red";
+        statusElement.style.color = "red";
+        statusElement.innerText = 'Completa todos los datos.';
+        statusElement.style.display = 'block';
+
+      
+        return;
+    }
+
+
+  
+            var tarjetaSeleccionada = document.querySelector('.cards .active');
+    var statusElement = document.getElementById('titles');
+    var pagina1 = document.getElementById('pagina1');
+
+
+    if (tarjetaSeleccionada) {
+        statusElement.style.display = 'block';
+        statusElement.style.color = "green";
+        localStorage.setItem('compraExitosa', 'true');
+        localStorage.setItem('paginaOrigen', window.location.href);
+
+
+
+   
+
+        setTimeout(function() {
+            statusElement.innerText = '';
+            statusElement.style.display = 'none';
+            document.getElementById('user').value = '';
+            document.getElementById('cvvv').value = '';
+            document.getElementById('num').value = '';
+            tarjetaSeleccionada.classList.remove('active');
+
+            
+            pagina1.classList.add('opacidadReducida');
+            
+            window.close();
+           }, 3000);
+    } else {
+        statusElement.style.color = "red";
+        statusElement.innerText = 'Selecciona el metodo de pago.';
+        statusElement.style.display = 'block'; 
+    }
+}
+    </script>
+   
+</body>
+</html>
