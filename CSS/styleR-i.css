@@ -32,8 +32,9 @@
 
 
 body {
-    background-image: url(/Imagenes/IMG-REGISTER-LOGIN/FondoLoginRegister.png);
+
    background-color: rgb(255, 255, 255);
+   background-image: url(../Imagenes/IMG_REGISTER_LOGIN/FondoLoginRegister.png);
 }
 body, html {
     margin: 0;

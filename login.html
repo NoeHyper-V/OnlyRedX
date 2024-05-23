@@ -25,6 +25,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     }
     #orx:hover{
     color: rgb(49, 162, 214);
+   
   }
 
 
@@ -38,7 +39,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   <div id="page">
 <div class="hangar-auth">
 <div class="hangar-form">
-<img id="animimg" draggable="false" src="/Imagenes/IMG-HOME/IMG-INICIO/LogoORX.png" alt="Login" class="hangar-logo">
+<img id="animimg" draggable="false" src="./Imagenes/IMG-HOME/IMG-INICIO/LogoORX.png" alt="Login" class="hangar-logo">
 <h1 class="hangar-auth_title">
   <i class="bi bi-box-arrow-in-right"></i>
 <span>Login | ORX</span>
@@ -122,7 +123,7 @@ togglePassword.addEventListener('click', function() {
 
   $(document).ready(function() {
     $('#registe').click(function() {
-      window.location.href = 'register.php';
+      window.location.href = 'register.html';
     });
   });
   $(document).ready(function() {
@@ -369,77 +370,23 @@ function redirectToAnotherForm() {
         event.preventDefault();
         const username = document.querySelector('#username').value;
         const pass = document.querySelector('#pass').value;
+  
+        const Toast = Swal.mixin({
+              toast: true,
+              position: 'bottom-end',
+              showConfirmButton: false,
+              timer: 3000
+            });
+            Toast.fire({
+              icon: "success",
+              type: 'success',
+              title: "✔️<span style='color: lime;'>Success :V</span>✔️",
+              background: "#141a25",
+            });
+        /// timer: 5500,
 
-     
-        if (authenticateUser(username, pass)) {
-
-               
-          Swal.fire({
-            icon: "success",
-           title: "✔️<span style='color: lime;'>Success</span>✔️",
-           background: "#141a25",
-           showConfirmButton: false,
-           showClass: {
-           popup: `
-           animate__animated
-           animate__bounceIn
-           animate__faster
-           `
-           },
-          hideClass: {
-          popup: `
-          animate__animated
-          animate__bounceIn
-          animate__faster
-       `
-     },
-     timer: 5500,
-});
-
-               
-        setTimeout(() => {
-        redirectToAnotherForm(username);
-    }, 2000);
             
-        } else {
-
-          Swal.fire({
-            icon: "error",
-            title: "<span style='color: red;'>Oops...</span>",
-           text:  "❌Credenciales incorrectos...❌",
-           background: "#141a25",
-           footer: '<a style="color:red" href="https://discord.com/users/#noe1010">Comunicarse con el administrador</a>',
-           showClass: {
-           popup: `
-           animate__animated
-           animate__fadeInUp
-           animate__faster
-           `
-        },
-        hideClass: {
-        popup: `
-      animate__animated
-      animate__fadeOutDown
-      animate__faster
-       `
-     }
-});
-          /*  
-          Swal.fire({
-           icon: "error",
-           title: "Oops...",
-          text: "Credenciales incorrectos...",
-           footer: '<a style="color:red" href="#">Comunicarse con el admin</a>'
-          
-             });*/
-        }
-    }
-
-    function redirectToAnotherForm(username) {
-      sessionStorage.setItem('username', username);
-
-    
-     window.location.href = 'panel.html';
+        
       
     }
 </script>

@@ -160,8 +160,8 @@ section .circle[data-v-79dab372] {
     width: 773px;
     height: 773px;
     background-color: #48ebf7;
-    -webkit-mask-image: url(/Imagenes/IMG-HOME/IMG-BENEFICIOS/circulo.svg);
-    mask-image: url(/Imagenes/IMG-HOME/IMG-BENEFICIOS/circulo.svg);
+    -webkit-mask-image: url(../Imagenes/IMG-HOME/IMG-BENEFICIOS/circulo.svg);
+    mask-image: url(../Imagenes/IMG-HOME/IMG-BENEFICIOS/circulo.svg);
 }
 
 
@@ -173,8 +173,8 @@ section .circle[data-v-201e3b9b] {
     width: 433px;
     height: 791px;
     background-color: #9cfe41;
-    -webkit-mask-image: url(/Imagenes/IMG-HOME/IMG-BENEFICIOS/circulo.svg);
-    mask-image: url(/Imagenes/IMG-HOME/IMG-BENEFICIOS/circulo.svg);
+    -webkit-mask-image: url(../Imagenes/IMG-HOME/IMG-BENEFICIOS/circulo.svg);
+    mask-image: url(../Imagenes/IMG-HOME/IMG-BENEFICIOS/circulo.svg);
     -webkit-mask-size: cover;
     mask-size: cover;
    
@@ -188,8 +188,8 @@ section .circle[data-v-8c69eecc] {
     width: 241px;
     height: 700px;
     background-color: #ffe604;
-    -webkit-mask-image: url(/Imagenes/IMG-HOME/IMG-BENEFICIOS/circulo.svg);
-    mask-image: url(/Imagenes/IMG-HOME/IMG-BENEFICIOS/circulo.svg);
+    -webkit-mask-image: url(../Imagenes/IMG-HOME/IMG-BENEFICIOS/circulo.svg);
+    mask-image: url(../Imagenes/IMG-HOME/IMG-BENEFICIOS/circulo.svg);
     -webkit-mask-size: cover;
     mask-size: cover;
     }
@@ -200,8 +200,8 @@ section .circle[data-v-8c69eecc] {
         width: 756px;
         height: 723px;
         background-color: rgb(233 25 25);
-        -webkit-mask-image: url(/Imagenes/IMG-HOME/IMG-BENEFICIOS/circulo.svg);
-        mask-image: url(/Imagenes/IMG-HOME/IMG-BENEFICIOS/circulo.svg);
+        -webkit-mask-image: url(../Imagenes/circulo.svg);
+        mask-image: url(../Imagenes/circulo.svg);
     }
 /*prueba*/
 @keyframes zoom {
@@ -1069,7 +1069,7 @@ body,
     color: var(--text-white);
     border-radius: 8px;
     background-size: 100% 99%;
-    background-image: url(/Imagenes/IMG-HOME/IMG-INICIO/BorderBottomLogin.svg);
+    background-image: url(../Imagenes/IMG-HOME/IMG-INICIO/BorderBottomLogin.svg);
 }
 
 .user-login__button span {
@@ -1705,8 +1705,8 @@ section {
     position: relative;
     display: flex;
     align-items: center;
-    background-image: url(/Imagenes/IMG-HOME/IMG-INICIO/FondoHome.png);
     background-size: cover;
+    background-image: url(../Imagenes/IMG-HOME/IMG-INICIO/FondoHome.png);
     background-position: top;
     background-repeat: no-repeat
 }
@@ -2799,8 +2799,8 @@ element.style {
     left: -24px;
     margin-top: 4px;
     background-color: #7ec9ff;
-    -webkit-mask-image: url(/Imagenes/IMG-HOME/IMG-SUBCRIPCION/buylinea.svg);
-    mask-image: url(/Imagenes/IMG-HOME/IMG-SUBCRIPCION/buylinea.svg);
+    -webkit-mask-image: url(../Imagenes/IMG-HOME/IMG-SUBCRIPCION/buylinea.svg);
+    mask-image: url(../Imagenes/IMG-HOME/IMG-SUBCRIPCION/buylinea.svg);
     background-size: cover;
 }
 .buy-card .body .price[data-v-7b155a7d] {
@@ -2852,8 +2852,8 @@ element.style {
     bottom: -50px;
     height: 184px;
     background-color: red;
-    -webkit-mask-image: url(/Imagenes/IMG-HOME/IMG-SUBCRIPCION/Linea.svg);
-    mask-image: url(/Imagenes/IMG-HOME/IMG-SUBCRIPCION/Linea.svg);
+    -webkit-mask-image: url(../Imagenes/IMG-HOME/IMG-SUBCRIPCION/Linea.svg);
+    mask-image: url(../Imagenes/IMG-HOME/IMG-SUBCRIPCION/Linea.svg);
     z-index: 0;
 }
 .buy-card .bg-inner[data-v-7b155a7d], .buy-card .underline[data-v-7b155a7d] {
@@ -2983,6 +2983,7 @@ footer {
     position: relative;
     bottom: auto;
 }
+/*
 .footer {
     flex-grow: 0;
     position: fixed;
@@ -2993,7 +2994,7 @@ footer {
     z-index: var(--overflow-z-index);
     padding-bottom: 30px;
     transition: padding .3s ease-in-out 0s;
-}
+}*/
 .layout__footer {
     -webkit-animation-name: footer-fadeout;
     animation-name: footer-fadeout;

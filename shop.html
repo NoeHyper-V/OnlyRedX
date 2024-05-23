@@ -345,27 +345,25 @@ form {
     function pagarClicked(){
         var carritoItems = document.querySelectorAll('.carrito .carrito-items .carrito-item .carrito-item-titulo');
     var titulos = Array.from(carritoItems).map(item => item.textContent.trim()).join(', ');
-    Swal.fire({
-        icon: "success",
-        title: "✔️<span style='color: lime;'>Adquisición realizada con éxito.</span>✔️",
-        text: "-"+ titulos + "-",
-        background: "#141a25",
-       showClass: {
-        popup: `
-          animate__animated
-          animate__fadeInUp
-          animate__faster
-        `
-      },
-      hideClass: {
-        popup: `
-          animate__animated
-          animate__fadeOutDown
-          animate__faster
-        `
-      }
-    });
+
   
+    const Toast = Swal.mixin({
+              toast: true,
+              position: 'bottom-end',
+              showConfirmButton: false,
+              timer: 3000
+            });
+            Toast.fire({
+              icon: "success",
+              type: 'success',
+              title: "✔️<span style='color: lime;'>Adquisición realizada con éxito.</span>✔️",
+              text:  "-"+ titulos + "-",
+              background: "#11528f",
+              
+            
+            });
+
+
     var carritoItems = document.getElementsByClassName('carrito-items')[0];
     while (carritoItems.hasChildNodes()){
         carritoItems.removeChild(carritoItems.firstChild)
